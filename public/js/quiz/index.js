@@ -4,13 +4,13 @@ function numberOfQuestions() {
     if (questions > 0 && answers > 0)
     document.getElementById("question-answers").innerHTML = '';
     for (let i = 0; i < questions; i++) {
-            addQuestions(i + 1, answers)
-            getNumberOfAnswers(i + 1, answers)
+            addQuestions(i, answers)
+            getNumberOfAnswers(i, answers)
         }
 }
 function addQuestions(index, answers) {
     let x = `<div class="mb-3">
-                <label for="question-`+index+`" class="col-md-4 col-form-label" style="font-weight: bold;">Question `+index+`</label>
+                <label for="question-`+index+`" class="col-md-4 col-form-label" style="font-weight: bold;">Question `+(index+1)+`</label>
                 <div class="col-md-12" id="question-container-`+index+`">
                     <input id="question-`+index+`" type="text" class="form-control" name="question-`+index+`" required autocomplete="question-`+index+`">
                 </div>

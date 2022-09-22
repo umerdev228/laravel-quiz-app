@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->integer('quiz_id');
             $table->integer('question_id');
-            $table->integer('answer');
-            $table->integer('is_correct');
+            $table->string('answer');
+            $table->boolean('is_correct');
             $table->timestamps();
         });
     }
