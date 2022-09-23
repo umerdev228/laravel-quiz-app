@@ -55,7 +55,7 @@ class QuizController extends Controller
         ]);
         $quiz = Quiz::create([
             'title' => $request->title,
-            'user_id' => 1,
+            'user_id' => Auth::id(),
             'description' => $request->description,
             'num_of_questions' => $request->num_of_questions,
             'num_of_answers' => $request->num_of_answers,

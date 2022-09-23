@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95b694b18e97667437a84c0f7c711826",
+    "content-hash": "77be91932570a4e9085318b65105896a",
     "packages": [
         {
             "name": "brick/math",
@@ -896,6 +896,68 @@
                 }
             ],
             "time": "2022-08-28T14:45:39+00:00"
+        },
+        {
+            "name": "hmones/laravel-digest",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hmones/laravel-digest.git",
+                "reference": "fa180d5a5e70f32afd829499f0e99c3cbcbc7267"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hmones/laravel-digest/zipball/fa180d5a5e70f32afd829499f0e99c3cbcbc7267",
+                "reference": "fa180d5a5e70f32afd829499f0e99c3cbcbc7267",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/support": "~7|~8|~9",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~5|~6|~7",
+                "phpunit/phpunit": "~9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Hmones\\LaravelDigest\\LaravelDigestServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelDigest": "Hmones\\LaravelDigest\\Facades\\LaravelDigest"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hmones\\LaravelDigest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Haytham Mones",
+                    "email": "haytham.mones@gmail.com",
+                    "homepage": "https://haythammones.com"
+                }
+            ],
+            "description": "A simple package to create and send digest emails every certain period or when the amount reaches a certain threshold.",
+            "homepage": "https://github.com/hmones/laravel-digest",
+            "keywords": [
+                "LaravelDigest",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/hmones/laravel-digest/issues",
+                "source": "https://github.com/hmones/laravel-digest/tree/v2.1.2"
+            },
+            "time": "2022-03-01T16:28:27+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7875,5 +7937,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
