@@ -10,9 +10,14 @@ class Quiz extends Model
     use HasFactory;
 
     protected $guarded = [];
+//    protected $with = ['questions', 'user'];
 
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+    public function questions(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Question::class, 'quiz_id', 'id');
     }
 }
